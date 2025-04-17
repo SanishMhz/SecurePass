@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container text-center my-5">
+        <h1 class="display-4">Welcome to SecurePass</h1>
+        <p class="lead">Your trusted password manager to keep your login credentials safe and secure.</p>
+
+        <!-- Get Started Button -->
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Get Started</a>
+        
+        <!-- Features Section -->
+        <div class="row my-5">
+            <div class="col-md-4">
+                <h3>Easy to Use</h3>
+                <p>Access your passwords with just a few clicks. Add, view, and delete passwords easily from the dashboard.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Highly Secure</h3>
+                <p>We use strong encryption to keep your passwords safe. Only you have access to your credentials.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Cross-Platform</h3>
+                <p>Access your stored passwords anywhere. SecurePass works across different devices, keeping your information synchronized.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 SecurePass. All rights reserved.</p>
+    </footer>
+{% endblock %}
